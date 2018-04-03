@@ -5,7 +5,7 @@
 
 @@html:<img src='1920x1080.jpg' width='900px'>@@
 
-** initially forked from 'https://github.com/alexbel/conky.git'
+** initially forked from [[https://github.com/alexbel/conky.git]]
    :PROPERTIES:
    :CUSTOM_ID: initially-forked-from-httpsgithub.comalexbelconky.git-.conky
    :END:
@@ -15,7 +15,7 @@
    :CUSTOM_ID: installation
    :END:
 
--  Clone repo git clone https://github.com/FrdVnW/conky.git -- in ~/.conky (in Debian)
+-  Clone repo git clone https://github.com/FrdVnW/conky.git -- in ~/.conky (for Debian)
 -  Install dependencies (see below)
 -  Install the necessary ruby gems (see below)
 -  Rename secrets.yml.example to secrets.yml and put your data in it
@@ -27,8 +27,10 @@
    :END:
 
 adding a shell script 'startconky.sh' in ~/.conky
+#+BEGIN_SRC sh
 #!/bin/bash\\
 cd ~/.conky && sleep 5 && ruby starter.rb
+#+END_SRC
 
 Gnome:\\
 Create a file =conky.desktop= in =~/.config/autostart= directory and
@@ -45,14 +47,6 @@ X-GNOME-Autostart-enabled=true
 Name=conky
 Comment=Launch a version of conky
 #+END_EXAMPLE
-
-*** Conky versions
-    :PROPERTIES:
-    :CUSTOM_ID: conky-versions
-    :END:
-
--  Use =master= branch for conky >= 1.10.0
--  Use =1.9= branch for conky <= 1.9.1
 
 *** Dependencies
     :PROPERTIES:
@@ -73,6 +67,16 @@ gems:\\
 
 Install gem: gem install gem\_name
 
+
+=== FOR FIP listeners (new by FrdVnW) ===
+You need to get FIP's informations on tracks using project [[https://github.com/mattberjon/fip]]
+
+#+BEGIN_SRC 
+sudo pip install fip
+#+END_SRC 
+
+
+== NOT TESTED ==
 Weather:\\
 - [[https://github.com/wnadeau/wunderground][wunderground]] gem -
 api\_key from http://www.wunderground.com/weather/api/
