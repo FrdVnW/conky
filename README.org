@@ -67,16 +67,16 @@ gems:\\
 
 Install gem: gem install gem\_name
 
-
-=== FOR FIP listeners (new by FrdVnW) ===
-You need to get FIP's informations on tracks using project [[https://github.com/mattberjon/fip]]
+*Python scripts for for FIP track information (new by FrdVnW)*
+Install package from the project [[https://github.com/mattberjon/fip]]
 
 #+BEGIN_SRC 
 sudo pip install fip
 #+END_SRC 
 
-
-== NOT TESTED ==
 Weather:\\
 - [[https://github.com/wnadeau/wunderground][wunderground]] gem -
 api\_key from http://www.wunderground.com/weather/api/
+
+* TODO getting train information from SNCB api
+[[http://www.belgianrail.be/fr/service-clientele/faq/public-data.aspx]]
