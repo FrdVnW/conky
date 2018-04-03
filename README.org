@@ -1,0 +1,78 @@
+** Conky configuration
+   :PROPERTIES:
+   :CUSTOM_ID: conky-configuration
+   :END:
+
+@@html:<img src='1920x1080.jpg' width='900px'>@@
+
+** initially forked from 'https://github.com/alexbel/conky.git'
+   :PROPERTIES:
+   :CUSTOM_ID: initially-forked-from-httpsgithub.comalexbelconky.git-.conky
+   :END:
+
+** Installation
+   :PROPERTIES:
+   :CUSTOM_ID: installation
+   :END:
+
+-  Clone repo git clone https://github.com/FrdVnW/conky.git -- in ~/.conky (in Debian)
+-  Install dependencies (see below)
+-  Install the necessary ruby gems (see below)
+-  Rename secrets.yml.example to secrets.yml and put your data in it
+-  Run 'ruby starter.rb' or just './starter.rb'
+
+** Autostart for Debian (FrdVnW)
+   :PROPERTIES:
+   :CUSTOM_ID: autostart-for-debian-frdvnw
+   :END:
+
+adding a shell script 'startconky.sh' in ~/.conky
+#!/bin/bash\\
+cd ~/.conky && sleep 5 && ruby starter.rb
+
+Gnome:\\
+Create a file =conky.desktop= in =~/.config/autostart= directory and
+fill it in with the following contents:
+
+#+BEGIN_EXAMPLE
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Type=Application
+Terminal=false
+Exec=/home/fred/.conky/startconky.sh
+X-GNOME-Autostart-enabled=true
+Name=conky
+Comment=Launch a version of conky
+#+END_EXAMPLE
+
+*** Conky versions
+    :PROPERTIES:
+    :CUSTOM_ID: conky-versions
+    :END:
+
+-  Use =master= branch for conky >= 1.10.0
+-  Use =1.9= branch for conky <= 1.9.1
+
+*** Dependencies
+    :PROPERTIES:
+    :CUSTOM_ID: dependencies
+    :END:
+
+Required:\\
+- curl - ss - acpi - sensors
+
+Conky libs:\\
+- conky-imlib2
+
+Gmail:\\
+- ruby >= 1.9.3
+
+gems:\\
+- ruby-gmail - mime
+
+Install gem: gem install gem\_name
+
+Weather:\\
+- [[https://github.com/wnadeau/wunderground][wunderground]] gem -
+api\_key from http://www.wunderground.com/weather/api/
