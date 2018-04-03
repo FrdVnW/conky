@@ -67,12 +67,14 @@ gems:\\
 
 Install gem: gem install gem\_name
 
-*Python scripts for for FIP track information (new by FrdVnW)*
+*Python scripts for for FIP track information*
 Install package from the project [[https://github.com/mattberjon/fip]]
 
 #+BEGIN_SRC 
 sudo pip install fip
 #+END_SRC 
+
+*New* configs 'music' 
 
 Weather:\\
 - [[https://github.com/wnadeau/wunderground][wunderground]] gem -
