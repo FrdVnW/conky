@@ -78,5 +78,5 @@ Weather:\\
 - [[https://github.com/wnadeau/wunderground][wunderground]] gem -
 api\_key from http://www.wunderground.com/weather/api/
 
-* TODO getting train information from SNCB api
+TODO getting train information from SNCB api
 [[http://www.belgianrail.be/fr/service-clientele/faq/public-data.aspx]]
