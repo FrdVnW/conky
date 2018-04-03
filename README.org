@@ -28,7 +28,7 @@
 
 adding a shell script 'startconky.sh' in ~/.conky
 #+BEGIN_SRC sh
-#!/bin/bash\\
+#!/bin/bash
 cd ~/.conky && sleep 5 && ruby starter.rb
 #+END_SRC
 
